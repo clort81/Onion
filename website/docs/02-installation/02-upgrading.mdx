@@ -54,8 +54,9 @@ please **make sure to create in-game saves** before upgrading.
 2. Copy the 7 folders to your SD card, using the following command (replace `/run/media/mmcblk0p1` with the path to your SD card):
 
    ```sh
-   cp -rf Onion-v4.2.0/* /run/media/mmcblk0p1
+   cp -rf Onion-v4.2.0/* /run/media/mmcblk0p1 
    ```
+   However NB: The wildcard Onion-v4.21.0/* will NOT copy .tmp_update folder over to your card.  The unix/bsd/linux "cp" command will not match files or directories beginning with a dot to the wildcard character.
 
 </TabItem>
 <TabItem value="chromeos" label="Chrome OS">
